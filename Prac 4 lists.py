@@ -1,4 +1,4 @@
-numlist = [3, 1, 4, 1, 5, 9, 2]
+numbers = [3, 1, 4, 1, 5, 9, 2]
 #numbers[0] -> 3
 #numbers[-1] -> 2
 #numbers[3] -> 1
@@ -8,23 +8,23 @@ numlist = [3, 1, 4, 1, 5, 9, 2]
 #7 in numbers -> True
 #"3" in numbers -> False
 #numbers + [6, 5, 3] -> [3, 1, 4, 1, 5, 9, 2, 6, 5, 3]
-print(numlist[0])
-print(numlist[-1])
-print(numlist[3])
-print(numlist[:-1])
-print(numlist[3:4])
-print(5 in numlist)
-print(7 in numlist)
-print("3" in numlist)
-print(numlist + [6, 5, 3])
+print(numbers[0])
+print(numbers[-1])
+print(numbers[3])
+print(numbers[:-1])
+print(numbers[3:4])
+print(5 in numbers)
+print(7 in numbers)
+print("3" in numbers)
+print(numbers + [6, 5, 3])
 
 #1.
-numlist[0] = "ten"
-print(numlist)
+numbers[0] = "ten"
+print(numbers)
 #2.
-numlist[6] = 1
+numbers[6] = 1
 #3.
-print(numlist[:1])
+print(numbers[:1])
 #4.
-print(9 in numlist)
+print(9 in numbers)
 
