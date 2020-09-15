@@ -8,8 +8,9 @@ for word in words:
         word_counter[word] = 1
 
 words = list(word_counter.keys())
+longest_word = max(len(word) for word in words)
 words.sort()
 
 for word in words:
-    print("{} - {}".format(word, word_counter[word]))
+    print("{:{}} - {}".format(word, longest_word, word_counter[word]))
 

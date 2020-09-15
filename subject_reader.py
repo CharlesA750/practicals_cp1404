@@ -6,15 +6,15 @@ Data file -> lists program
 FILENAME = "subject_data.txt"
 
 
-def main(subject_list):
-    get_data()
+def main():
+    subject_list = []
+    get_data(subject_list)
     print(subject_list[0] + " is taught by " + subject_list[1] + " and has " + subject_list[2] + " students")
 
 
-def get_data():
+def get_data(subject_list):
     """Read data from file formatted like: subject,lecturer,number of students."""
     input_file = open(FILENAME)
-    subject_list = []
     for line in input_file:
         print(line)  # See what a line looks like
         print(repr(line))  # See what a line really looks like
@@ -30,4 +30,7 @@ def get_data():
 
 
 
-main(subject_list)
+main()
+
+
+
